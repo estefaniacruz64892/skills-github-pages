@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+:root {
+--fondo: #f5f5f5;
+--texto: #333;
+--principal: #7168c1;
+--secundario: #2a5fbb;
+--tarjeta: white;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: var(--fondo);
+color: var(--texto);
+}
+
+header {
+background-color: var(--principal);
+padding: 15px;
+}
+
+.menu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.menu ul {
+display: flex;
+list-style: none;
+gap: 25px;
+}
+
+.menu a {
+color: white;
+text-decoration: none;
+}
+
+.menu a:hover {
+text-decoration: underline;
+}
+
+#darkMode {
+padding: 8px 12px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#hero {
+min-height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 30px;
+}
+
+#hero h1 {
+font-size: 45px;
+color: var(--principal);
+margin-bottom: 10px;
+}
+
+#hero h2 {
+margin-bottom: 15px;
+}
+
+#about,
+#projects,
+#contacts {
+padding: 50px 10%;
+text-align: center;
+}
+
+#about h2,
+#projects h2,
+#contacts h2 {
+margin-bottom: 20px;
+}
+
+.projects-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+margin-top: 30px;
+}
+
+.project {
+background-color: var(--tarjeta);
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+color: var(--principal);
+margin-bottom: 15px;
+}
+
+.project p {
+margin-bottom: 15px;
+}
+
+.project a {
+color: var(--secundario);
+text-decoration: none;
+}
+
+.project a:hover {
+text-decoration: underline;
+}
+
+.filtros {
+margin-top: 20px;
+}
+
+.filter-btn {
+padding: 10px 15px;
+margin: 5px;
+border: none;
+border-radius: 5px;
+background-color: var(--principal);
+color: white;
+cursor: pointer;
+}
+
+.filter-btn:hover {
+background-color: var(--secundario);
+}
+
+/* modo oscuro */
+
+body.dark {
+--fondo: #222;
+--texto: #eee;
+--tarjeta: #333;
+--principal: #8178d1;
+}
+
+#contacts {
+margin-bottom: 30px;
+}
+
+/* Para celulares */
+
+@media (max-width: 768px) {
+
+```
+.menu {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+#hero h1 {
+    font-size: 35px;
+}
+
+.projects-container {
+    grid-template-columns: 1fr;
+}
+
+#about,
+#projects,
+#contacts {
+    padding: 40px 5%;
+}
+```
+
+}
