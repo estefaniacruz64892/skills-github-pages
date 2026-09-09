@@ -52,24 +52,22 @@ cursor: pointer;
 }
 
 #hero {
-min-height: 400px;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-padding: 30px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #hero h1 {
-font-size: 45px;
-color: var(--principal);
-margin-bottom: 10px;
+    font-size: 45px;
+    color: var(--principal);
+    margin-bottom: 10px;
 }
 
 #hero h2 {
-margin-bottom: 15px;
+    margin-top: 0;
 }
-
 #about,
 #projects,
 #contacts {
