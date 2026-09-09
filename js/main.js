@@ -5,15 +5,17 @@ botones.forEach(function(boton) {
 
     boton.addEventListener("click", function() {
 
-        const filtro = boton.getAttribute("data-filter");
+        const filtro = boton.dataset.filter;
 
         proyectos.forEach(function(proyecto) {
 
-            const categoria = proyecto.getAttribute("data-category");
-
-            if (filtro === "todos" || filtro === categoria) {
+            if (filtro === "todos") {
                 proyecto.style.display = "block";
-            } else {
+            } 
+            else if (proyecto.dataset.category === filtro) {
+                proyecto.style.display = "block";
+            } 
+            else {
                 proyecto.style.display = "none";
             }
 
@@ -22,6 +24,7 @@ botones.forEach(function(boton) {
     });
 
 });
+
 
 const botonModo = document.getElementById("darkMode");
 
