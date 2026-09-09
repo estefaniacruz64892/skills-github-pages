@@ -22,3 +22,11 @@ botones.forEach(function(boton) {
     });
 
 });
+
+const botonModo = document.getElementById("darkMode");
+
+botonModo.addEventListener("click", function() {
+
+    document.body.classList.toggle("dark");
+
+});
